@@ -1,0 +1,68 @@
+
+
+
+//== Waterfall Section ::::
+.moduleWaterfallgrid{ 
+    background: #e6e6e6;
+    .grid-container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        .my-grid{
+            padding: 0;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            visibility: visible;
+            text-align: center;
+            .item{
+                background-color: transparent;
+                text-align: center;
+                display: block;
+                height: auto;
+                width: 100%;
+                margin: 0;
+                padding: 10px;
+                @include respond-to-min(600){
+                    width: 50%;
+                }
+                @include respond-to-min(750){
+                    width: 25%;
+                }
+                .pin-card{
+                    width: 100%;
+                    height: auto;
+                    background: #fff;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 7px 0 rgba(#000, 0.15);
+                    .img-wrap{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .pin-body{
+                        width: 100%;
+                        height: auto;
+                        background: #fff;
+                        padding: 0;
+                        position: relative;
+                        border-radius: 5px;
+                        margin-top: -10px;
+                        h4{
+                            margin: 0;
+                            padding: 0;
+                        }
+                        p{
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//========== /Waterfall Section

@@ -1,0 +1,129 @@
+
+//== Header Section ::::
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    padding: 1em 0;
+    z-index: 99;
+    transition: all 300ms ease-in-out;
+    background: transparent;
+    color: #fff;
+
+    .wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;   
+    }
+
+    .logo {
+        margin: 0;
+        font-weight: 600;
+        order: 2;
+        max-width: 100px;
+        transition: all 300ms ease-in-out;
+        @include respond-to-min(750){
+            max-width: 160px;
+            order: 0;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: #101f38;
+        transition: all .3s ease-in-out;
+        @include respond-to-min(750){
+            width: auto;
+            height: auto;
+            position: relative;
+            top: auto;
+            right: auto;
+            background: transparent;
+        }
+        ul {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            list-style: none;
+            display: flex;
+            margin: 80px 0 0 0;
+            padding: 0;
+
+            @include respond-to-min(750){
+                align-content: space-between;
+                justify-content: center;
+                flex-direction: row;
+                margin: 0;
+            }
+
+            li {
+                margin: 0 0 20px 0;
+
+                @include respond-to-min(750){
+                    margin: 0 0 0 40px;
+                }
+
+                a {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    /* identical to box height, or 143% */
+
+                    text-transform: uppercase;
+
+                    /* General / Light */
+
+                    color: #FFFFFF;
+                    &:hover{
+                        color: #75E2F8;
+                    }
+                }
+            }
+        }
+    }
+
+    &.active {
+        background: #101F38;
+
+        .logo {
+            color: #303030;
+            max-width: 120px;
+        }
+
+        nav {
+            ul {
+                li {
+                    a {
+                        color: #fff;
+                        &:hover{
+                            color: #75E2F8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hamb{
+            span{
+                background: #fff;
+            }
+        }
+    }
+
+    &.open{
+        nav{
+            right: 0;
+        }
+    }
+}
+//========== /Header Section
