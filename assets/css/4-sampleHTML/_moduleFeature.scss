@@ -1,7 +1,39 @@
-
+.moduleFeature-1 {
+    z-index: 2;
+    .wrap{
+        position: relative;
+    }
+    .float6{
+        position: absolute;
+        left: -262px;
+        top: 17px;
+    }
+}
 //== Feature Section ::::
 .moduleFeature-2 {
-    z-index: 2;
+    z-index: 1;
+
+    .wrap{
+        position: relative;
+    }
+    
+    .float3{
+        position: absolute;
+        right: 163px;
+        bottom: -188px;
+    }
+    
+    .float4{
+        position: absolute;
+        left: -62px;
+        bottom: 17px;
+    }
+    
+    .float5{
+        position: absolute;
+        right: -62px;
+        top: 17px;
+    }
     .box-cont{
         //padding-top: 80px;
         //padding-bottom: 80px;
