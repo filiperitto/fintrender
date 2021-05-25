@@ -55,7 +55,7 @@
         position: relative;
         
         z-index: 1;
-        padding-top: 120px;
+        padding-top: 30px;
         align-items: center;
         
         @include respond-to-min(750){
@@ -90,6 +90,7 @@
             color: #FFFFFF;
             margin-bottom: 10px;
             text-transform: uppercase;
+            text-align: center;
             @include respond-to-min(750){
                 font-size: 32px;
                 line-height: 45px;
@@ -100,9 +101,12 @@
         }
         img{
             width: 100%;
-            max-width: 295px;
+            max-width: 100px;
             height: auto;
             margin-bottom: 50px;
+            @include respond-to-min(750){
+                max-width: 295px;
+            }
         }
     }
     .selo-timer{
@@ -162,10 +166,15 @@
 
     .transmissao-box{
         position: relative;
-        padding: 15px;
         display: table;
         background: rgba(117, 226, 248, 0.15);
-        width: 80%;
+        padding: 0;
+        width: 100%;
+        
+        @include respond-to-min(500){
+            padding: 15px;
+            width: 80%;
+        }
         .embed-responsive{
             position: relative;
             display: block;
@@ -196,6 +205,11 @@
         position: relative;
         //margin: auto;
         z-index: 3;
+        display: none;
+        
+        @include respond-to-min(750){
+            display: block;
+        }
         svg{
             height: 115px;
             #um{

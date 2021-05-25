@@ -5375,7 +5375,7 @@ footer .copy-box ul li a {
           flex-direction: column;
   position: relative;
   z-index: 1;
-  padding-top: 120px;
+  padding-top: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5429,6 +5429,7 @@ footer .copy-box ul li a {
   color: #FFFFFF;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media only screen and (min-width: 750px) {
@@ -5444,9 +5445,15 @@ footer .copy-box ul li a {
 
 .moduleTransmissao .text-box img {
   width: 100%;
-  max-width: 295px;
+  max-width: 100px;
   height: auto;
   margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .text-box img {
+    max-width: 295px;
+  }
 }
 
 .moduleTransmissao .selo-timer {
@@ -5533,10 +5540,17 @@ footer .copy-box ul li a {
 
 .moduleTransmissao .transmissao-box {
   position: relative;
-  padding: 15px;
   display: table;
   background: rgba(117, 226, 248, 0.15);
-  width: 80%;
+  padding: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .moduleTransmissao .transmissao-box {
+    padding: 15px;
+    width: 80%;
+  }
 }
 
 .moduleTransmissao .transmissao-box .embed-responsive {
@@ -5568,6 +5582,13 @@ footer .copy-box ul li a {
   background: transparent;
   position: relative;
   z-index: 3;
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .mouse {
+    display: block;
+  }
 }
 
 .moduleTransmissao .mouse svg {
