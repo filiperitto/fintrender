@@ -5,6 +5,10 @@ footer{
     position: relative;
     margin: 0;
     padding: 0;
+    margin-bottom: 87px;
+    @include respond-to-min(750){
+        margin-bottom: 137px;
+    }
 
     .nav-soci{
         width: 100%;
@@ -46,7 +50,10 @@ footer{
         padding: 40px 0;
         .wrap{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            @include respond-to-min(750){
+                justify-content: space-between;
+            }
         }
         
 

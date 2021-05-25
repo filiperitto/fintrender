@@ -1,7 +1,9 @@
+
+
 //-== Header fixed on top animation
 (function () {
 
-    var headerScroll = getId('header-main'),
+    var headerScroll = getId('form-sticker'),
         scrollHeight = 10,
         classHeader = 'active';
 
@@ -35,6 +37,8 @@
 
 })(); 
 //========== /Header fixed on top animation
+
+
 
 //-== HamburgerMenu Toggle
 (function(){
@@ -92,48 +96,25 @@
 //======================== /Anchor Scrollsmooth
 
 
-
-//== Accordion Module
+//-== NewsletterModal Toggle
 (function(){
-    let accTitle = document.getElementsByClassName("acc-heading");
-    let accContent = document.getElementsByClassName("acc-content");
-    let singleMode = true;
-    
-    for( let j=0; j<accContent.length; j++ ){
-        let realHeight = accContent[j].offsetHeight;
-        accContent[j].setAttribute("data-height", realHeight + "px");
-        accContent[j].style.height = 0;
+    function modalToggle() {
+        document.getElementById('form-sticker').classList.toggle('in');
+        document.getElementById('modal-backdrop').classList.toggle('in');
+        document.getElementById('modal-backdrop-btn').classList.toggle('in');
     }
     
-    for( let i=0; i<accTitle.length; i++ ){
-        accTitle[i].onclick = function(){
-            let openedAcc = this.getAttribute('href').replace('#', '');
+    // Select all the elements with example class.
+    var btnModal = document.querySelectorAll('.btn-modal');
+    var backdropBtn = document.querySelectorAll('.modal-bta');
     
-            if( this.classList.contains("active") ){
-                this.classList.remove("active");
-                document.getElementById(openedAcc).style.height = 0;
-                
-                return false;
-            }
-            
-            if( singleMode ){						
-                for(let k=0; k<accTitle.length; k++) {
-                    accTitle[k].classList.remove("active");
-                }
-    
-                for(let j=0; j<accContent.length; j++) {
-                    accContent[j].style.height = 0;
-                }
-            }
-            
-            this.classList.add("active");
-            
-            document.getElementById(openedAcc).style.height = accContent[i].getAttribute("data-height");
-            
-            return false;
-        }
+    // Loop through the elements.
+    for (var i = 0; i < btnModal.length; i++) {
+        btnModal[i].addEventListener('click', modalToggle);
+    }
+    for (var i = 0; i < backdropBtn.length; i++) {
+        backdropBtn[i].addEventListener('click', modalToggle);
     }
 })();
-//======================== /Accordion Module
-        
+//======================== /NewsletterModal Toggle
 
