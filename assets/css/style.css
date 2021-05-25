@@ -1638,14 +1638,18 @@ header .logo {
   max-width: 100px;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+  display: none;
 }
 
 @media only screen and (min-width: 750px) {
   header .logo {
+    display: block;
     max-width: 160px;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
   }
 }
 
@@ -1666,7 +1670,7 @@ header nav {
 
 @media only screen and (min-width: 750px) {
   header nav {
-    width: auto;
+    width: 100%;
     height: auto;
     position: relative;
     top: auto;
@@ -1700,9 +1704,9 @@ header nav ul {
   header nav ul {
     -ms-flex-line-pack: justify;
         align-content: space-between;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1734,6 +1738,91 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #75E2F8;
+}
+
+header .selo-timer {
+  width: 100%;
+  max-width: 290px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+header .selo-timer .counterBoy {
+  width: 100%;
+  max-width: 208px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .selo-timer .counterBoy .ctdw {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 25%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+
+header .selo-timer .counterBoy .ctdw h1 {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 750px) {
+  header .selo-timer .counterBoy .ctdw h1 {
+    font-size: 23px;
+  }
+}
+
+header .selo-timer .counterBoy .ctdw span {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 750px) {
+  header .selo-timer .counterBoy .ctdw span {
+    font-size: 10px;
+  }
 }
 
 header.active {
@@ -1859,6 +1948,10 @@ body {
   overflow-x: hidden;
   background: #101F38;
   color: #fff;
+}
+
+.main {
+  overflow: hidden;
 }
 
 .wrap {
