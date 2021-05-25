@@ -328,10 +328,9 @@
                     </div>
                     <div class="nav-footer">
                         <ul>
-                            <li class="itemNav menu-item"><a class="" href="#hero-1">HOME</a></li>
-                            <li class="itemNav menu-item"><a href="#about-2">AULAS</a></li>
-                            <li class="itemNav menu-item"><a href="#contact">FAQ</a></li>
-                            <li class="itemNav menu-item"><a href="#about-2">CONTATO</a></li>
+                            <li class="itemNav menu-item"><a class="" href="#masterclass">A MasterClass</a></li>
+                            <li class="itemNav menu-item"><a href="#especialista">O Mestre</a></li>
+                            <li class="itemNav menu-item"><a href="#info">MAIS INFORMAÇÕES</a></li>
                         </ul>
                     </div>
                 </div>
@@ -342,8 +341,8 @@
                     <p>Copyright © 2021 Fintrenfer. All rights reserved.</p>
 
                     <ul>
-                        <li><a href="javascript:void(0)">Politica de Privacidade</a></li>
-                        <li><a href="javascript:void(0)">Termos e Condições</a></li>
+                        <li><a href="termos.html">Politica de Privacidade</a></li>
+                        <li><a href="termos.html">Termos e Condições</a></li>
                     </ul>
                 </div>
             </div>
@@ -356,6 +355,44 @@
 
     <script src="assets/js/transmissao.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        
+        (function () {
+
+            var headerScroll = getId('form-sticker'),
+                scrollHeight = 10,
+                classHeader = 'active';
+
+            //SCROLL
+            window.addEventListener("scroll", scrollOn);
+
+            function scrollOn() {
+                animatedScroll(headerScroll, classHeader, scrollHeight);
+            }
+
+            //Função que on scroll muda o comportamento do elemento
+            function animatedScroll(element, classN, height) {
+                y = pageYOffset; //resgata do objeto window o valor pageYOffset e guarda na variável
+                if (y > height) {
+                    element.className = classN;
+                } else {
+                    element.className = '';
+                }
+            }
+
+            // Função toggle adiciona ou tira a class do elemento
+            function toggle(element, classe) {
+                element.className = element.className ? '' : classe;
+            }
+
+            //Função que retorna o id do elemento
+            function getId(id) {
+                return document.getElementById(id);
+            }
+
+
+        })(); 
+    </script>
 
 </body>
 
