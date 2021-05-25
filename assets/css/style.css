@@ -1813,7 +1813,7 @@ header .selo-timer .counterBoy .ctdw span {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #75E2F8;
   font-style: normal;
   font-weight: bold;
   font-size: 10px;
@@ -3434,6 +3434,7 @@ footer .copy-box ul li a {
   background: #0C172B;
   border: 1px solid #283957;
   border-radius: 51px;
+  color: #fff;
   padding: 15px 25px;
   outline: none;
   -webkit-transition: all 0.3s ease-in-out;
