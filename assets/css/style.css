@@ -1608,7 +1608,7 @@ iframe.wait-autoplay {
 header {
   width: 100%;
   height: auto;
-  position: absolute;
+  position: fixed;
   padding: 1em 0;
   z-index: 99;
   -webkit-transition: all 300ms ease-in-out;
@@ -2271,7 +2271,7 @@ section {
 
 @media only screen and (min-width: 750px) {
   section {
-    padding: 0 0 60px;
+    padding: 80px 0 0px;
   }
 }
 
@@ -2585,7 +2585,7 @@ footer {
 
 @media only screen and (min-width: 750px) {
   footer {
-    margin-bottom: 137px;
+    margin-bottom: 110px;
   }
 }
 
@@ -2851,6 +2851,7 @@ footer .copy-box ul li a {
 @media only screen and (min-width: 750px) {
   .moduleHero {
     height: 100vh;
+    padding: 0px 0 60px;
   }
 }
 
@@ -3027,6 +3028,93 @@ footer .copy-box ul li a {
   background: transparent;
   position: relative;
   z-index: 3;
+}
+
+.moduleHero .mouse svg {
+  height: 115px;
+}
+
+.moduleHero .mouse svg #um {
+  -webkit-animation-name: example1;
+          animation-name: example1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example1 {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes example1 {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+.moduleHero .mouse svg #dois {
+  -webkit-animation-name: example2;
+          animation-name: example2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example2 {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes example2 {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+.moduleHero .mouse svg line {
+  -webkit-transform: translate(0, 10px);
+          transform: translate(0, 10px);
 }
 
 @media only screen and (min-width: 750px) {
@@ -3825,6 +3913,7 @@ footer .copy-box ul li a {
 .moduleSteps-1 .step-box {
   width: 100%;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .moduleSteps-1 .step-box icon {

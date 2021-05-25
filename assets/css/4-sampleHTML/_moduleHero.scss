@@ -16,6 +16,7 @@
         
     @include respond-to-min(750){
         height: 100vh;
+        padding: 0px 0 60px;
     }
     .mask{
         width: 100%;
@@ -158,6 +159,54 @@
         position: relative;
         //margin: auto;
         z-index: 3;
+        svg{
+            height: 115px;
+            #um{
+                animation-name: example1;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+        
+                @keyframes example1{
+                    0%{
+                        transform: translate(0 , 0px);
+                    }
+        
+                    50%{
+                        transform: translate(0 , 10px);
+        
+                    }
+        
+                    100%{
+                        transform: translate(0 , 0px);
+        
+                    }
+                }
+            }
+            #dois{
+                animation-name: example2;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+        
+                @keyframes example2{
+                    0%{
+                        transform: translate(0 , 0px);
+                    }
+        
+                    50%{
+                        transform: translate(0 , 10px);
+        
+                    }
+        
+                    100%{
+                        transform: translate(0 , 0px);
+        
+                    }
+                }
+            }
+            line{
+                transform: translate(0 , 10px);
+            }
+        }
 
         @include respond-to-min(750){
             position: absolute;
