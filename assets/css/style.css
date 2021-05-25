@@ -5309,4 +5309,400 @@ footer .copy-box ul li a {
 .moduleFaq .btn-box .btn {
   margin-top: 30px;
 }
+
+.moduleTransmissao {
+  width: 100%;
+  height: auto;
+  background-size: cover !important;
+  position: relative;
+  z-index: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao {
+    height: auto;
+    padding: 70px 0 60px;
+  }
+}
+
+.moduleTransmissao .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(0.42deg, #101F38 0.41%, rgba(16, 31, 56, 0.41) 33.23%);
+  background: url(../img/bg_hero.jpg) no-repeat top center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.moduleTransmissao .mask .wrap {
+  height: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .mask {
+    height: 100vh;
+    padding: 70px 0 60px;
+  }
+}
+
+.moduleTransmissao .mask .mask2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(0.42deg, #101F38 0.41%, rgba(16, 31, 56, 0.41) 33.23%);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.moduleTransmissao .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding-top: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    padding-top: 0px;
+  }
+}
+
+.moduleTransmissao .wrap h1 {
+  color: #fff;
+}
+
+.moduleTransmissao .wrap p {
+  color: #fff;
+}
+
+.moduleTransmissao .text-box {
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.moduleTransmissao .text-box h2 {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  /* or 142% */
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .text-box h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+.moduleTransmissao .text-box h2 span {
+  color: #75E2F8;
+}
+
+.moduleTransmissao .text-box img {
+  width: 100%;
+  max-width: 295px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.moduleTransmissao .selo-timer {
+  width: 100%;
+  max-width: 400px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.moduleTransmissao .selo-timer .counterBoy {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.moduleTransmissao .selo-timer .counterBoy .ctdw {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 25%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+
+.moduleTransmissao .selo-timer .counterBoy .ctdw h1 {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin: 0;
+  padding: 0;
+  color: #75E2F8;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .selo-timer .counterBoy .ctdw h1 {
+    font-size: 45px;
+  }
+}
+
+.moduleTransmissao .selo-timer .counterBoy .ctdw span {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin: 0;
+  padding: 0;
+  color: #75E2F8;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .selo-timer .counterBoy .ctdw span {
+    font-size: 19px;
+  }
+}
+
+.moduleTransmissao .transmissao-box {
+  position: relative;
+  padding: 15px;
+  display: table;
+  background: rgba(117, 226, 248, 0.15);
+  width: 80%;
+}
+
+.moduleTransmissao .transmissao-box .embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  background: url(../img/olaceholder-video.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.moduleTransmissao .transmissao-box .embed-responsive iframe {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.moduleTransmissao .mouse {
+  width: 21px;
+  height: 80px;
+  background: transparent;
+  position: relative;
+  z-index: 3;
+}
+
+.moduleTransmissao .mouse svg {
+  height: 115px;
+}
+
+.moduleTransmissao .mouse svg #um {
+  -webkit-animation-name: example1;
+          animation-name: example1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes example1 {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+.moduleTransmissao .mouse svg #dois {
+  -webkit-animation-name: example2;
+          animation-name: example2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+.moduleTransmissao .mouse svg line {
+  -webkit-transform: translate(0, 10px);
+          transform: translate(0, 10px);
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .mouse {
+    position: absolute;
+    left: 40px;
+    left: -40px;
+    bottom: 50px;
+    right: auto;
+  }
+}
+
+.moduleTransmissao .social-box {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 250px;
+  display: none;
+  right: 20px;
+}
+
+@media only screen and (min-width: 500px) {
+  .moduleTransmissao .social-box {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .social-box {
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .moduleTransmissao .social-box {
+    right: 20px;
+  }
+}
+
+.moduleTransmissao .social-box ul {
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.moduleTransmissao .social-box ul li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.moduleTransmissao .social-box ul li:first-child {
+  height: 65px;
+}
+
+.moduleTransmissao .social-box ul li span {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: inline-block;
+  width: 132px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  left: -54px;
+  color: #75E2F8;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.moduleTransmissao .social-box ul li .separador {
+  position: relative;
+  height: 27px;
+  bottom: 0;
+  margin: 5px 0 13px 11px;
+}
+
+.page-live footer {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */
