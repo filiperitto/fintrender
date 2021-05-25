@@ -5723,6 +5723,18 @@ footer .copy-box ul li a {
   margin: 5px 0 13px 11px;
 }
 
+.moduleTransmissao .float1 {
+  position: absolute;
+  left: -160px;
+  bottom: 0;
+}
+
+.moduleTransmissao .float2 {
+  position: absolute;
+  right: -0px;
+  bottom: 40px;
+}
+
 .page-live footer {
   margin-bottom: 0;
 }
