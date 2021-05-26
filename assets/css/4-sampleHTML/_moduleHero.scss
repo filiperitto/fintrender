@@ -232,6 +232,7 @@
         }
         @include respond-to-min(1000){
             right: 20px;
+            right: -45px;
         }
         ul{
             width: 30px;
@@ -242,16 +243,16 @@
                 position: relative;
                 margin-bottom: 10px;
                 &:first-child{
-                    height: 65px;
+                    height: 55px;
                 }
                 span{
                     transform: rotate(90deg);
                     display: inline-block;
-                    width: 132px;
+                    width: 85px;
                     position: absolute;
                     text-transform: uppercase;
                     top: 0;
-                    left: -54px;
+                    left: -31px;
                     color: #75E2F8;
                     font-weight: 600;
                     line-height: 20px;
@@ -382,7 +383,7 @@
                     margin-top: 6px;
                     height: 38px;
                     line-height: 38px;
-                    padding: 0 38px;
+                    padding: 0 25px;
                     width: 100%;
                     @include respond-to-min(750){
                         position: absolute;

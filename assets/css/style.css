@@ -3246,6 +3246,7 @@ footer .copy-box ul li a {
 @media only screen and (min-width: 1000px) {
   .moduleHero .social-box {
     right: 20px;
+    right: -45px;
   }
 }
 
@@ -3262,18 +3263,18 @@ footer .copy-box ul li a {
 }
 
 .moduleHero .social-box ul li:first-child {
-  height: 65px;
+  height: 55px;
 }
 
 .moduleHero .social-box ul li span {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   display: inline-block;
-  width: 132px;
+  width: 85px;
   position: absolute;
   text-transform: uppercase;
   top: 0;
-  left: -54px;
+  left: -31px;
   color: #75E2F8;
   font-weight: 600;
   line-height: 20px;
@@ -3506,7 +3507,7 @@ footer .copy-box ul li a {
   margin-top: 6px;
   height: 38px;
   line-height: 38px;
-  padding: 0 38px;
+  padding: 0 25px;
   width: 100%;
 }
 
@@ -5577,6 +5578,18 @@ footer .copy-box ul li a {
   border: 0;
 }
 
+.moduleTransmissao .separador {
+  width: 2px;
+  height: 80px;
+  background: #75E2F8;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -30px;
+  z-index: 3;
+}
+
 .moduleTransmissao .mouse {
   width: 21px;
   height: 80px;
@@ -5684,6 +5697,7 @@ footer .copy-box ul li a {
 @media only screen and (min-width: 1000px) {
   .moduleTransmissao .social-box {
     right: 20px;
+    right: -45px;
   }
 }
 
@@ -5700,18 +5714,18 @@ footer .copy-box ul li a {
 }
 
 .moduleTransmissao .social-box ul li:first-child {
-  height: 65px;
+  height: 55px;
 }
 
 .moduleTransmissao .social-box ul li span {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   display: inline-block;
-  width: 132px;
+  width: 85px;
   position: absolute;
   text-transform: uppercase;
   top: 0;
-  left: -54px;
+  left: -31px;
   color: #75E2F8;
   font-weight: 600;
   line-height: 20px;
