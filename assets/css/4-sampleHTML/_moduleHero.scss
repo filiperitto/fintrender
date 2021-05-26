@@ -54,6 +54,11 @@
     }
     .text-box{
         margin-bottom: 20px;
+        width: 100%;
+        h1{
+            color: $azul-fin;
+            text-align: center;
+        }
         h3{
             margin: 0;
             padding: 0;
@@ -491,4 +496,9 @@
     }
 }
 
+.obrigado{
+    footer{
+        margin-bottom: 0;
+    }
+}
 //========== /Hero Section

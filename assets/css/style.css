@@ -1527,6 +1527,12 @@ footer .copy-box ul li a {
 
 .moduleHero .text-box {
   margin-bottom: 20px;
+  width: 100%;
+}
+
+.moduleHero .text-box h1 {
+  color: #75E2F8;
+  text-align: center;
 }
 
 .moduleHero .text-box h3 {
@@ -2152,6 +2158,10 @@ footer .copy-box ul li a {
     z-index: 1040;
     opacity: .6;
   }
+}
+
+.obrigado footer {
+  margin-bottom: 0;
 }
 
 .moduleFeature-1 {
