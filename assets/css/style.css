@@ -5851,7 +5851,6 @@ footer .copy-box ul li a {
   outline: 0;
   margin-top: 0;
   padding-top: 90px;
-  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -5861,22 +5860,17 @@ footer .copy-box ul li a {
   color: #75E2F8;
 }
 
-.moduleTermos .text-box h5 {
-  outline: 0;
-  margin-top: 0;
-  font-family: 'Roboto Condensed';
+.moduleTermos .text-box p {
   font-style: normal;
-  font-weight: bold;
-  /* or 133% */
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 15px;
-  color: #75E2F8;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: left;
+  /* or 200% */
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.moduleTermos .text-box p {
-  font-family: 'DM Sans';
+.moduleTermos .text-box ul li {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -5888,7 +5882,6 @@ footer .copy-box ul li a {
 
 .moduleTermos .text-box ol {
   list-style: lower-roman;
-  font-family: 'DM Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

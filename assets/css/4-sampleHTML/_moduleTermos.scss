@@ -88,7 +88,6 @@
             outline: 0;
             margin-top: 0;
             padding-top: 90px;
-            font-family: 'Roboto Condensed';
             font-style: normal;
             font-weight: bold;
             font-size: 24px;
@@ -99,22 +98,7 @@
             
             color: $azul-fin;
         }
-        h5{
-            outline: 0;
-            margin-top: 0;
-            font-family: 'Roboto Condensed';
-            font-style: normal;
-            font-weight: bold;
-            /* or 133% */
-            text-align: center;
-            
-            text-transform: uppercase;
-            margin: 0;
-            margin-bottom: 15px;
-            color: $azul-fin;
-        }
         p{
-            font-family: 'DM Sans';
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
@@ -126,9 +110,22 @@
             color: rgba(255, 255, 255, 0.75);
             //padding-left: 20px;
         }
+        ul{
+            li{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 30px;
+                text-align: left;
+                /* or 200% */
+                
+                
+                color: rgba(255, 255, 255, 0.75);
+                //padding-left: 20px;
+            }
+        }
         ol{
             list-style: lower-roman;
-            font-family: 'DM Sans';
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
