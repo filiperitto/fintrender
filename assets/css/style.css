@@ -1703,6 +1703,10 @@ section .subtitle {
   font-size: 14px;
 }
 
+#body.in {
+  overflow: hidden;
+}
+
 .moduleHero {
   width: 100%;
   height: auto;
