@@ -59,6 +59,9 @@ body {
     overflow-x: hidden;
     background: #101F38;
     color: #fff;
+    &.in{
+        overflow: hidden;
+    }
 }
 .main{
     overflow: hidden;
